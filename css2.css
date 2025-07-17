@@ -1,0 +1,396 @@
+
+/* Barcha tablelar uchun asosiy stillar */
+table {
+  width: 100%; /* Jadvalning kengligi 100% bo'ladi */
+  border-collapse: collapse; /* Jadval chegaralarini birlashtiradi */
+}
+
+/* Mobil qurilmalar uchun stil */
+@media screen and (max-width: 768px) {
+  table {
+    display: block; /* Mobilda jadvalni blok qilish */
+    overflow-x: auto; /* Agar kenglik yetmasa, gorizontal skroll qo'shish */
+    white-space: nowrap; /* Matnlarni qatorga sig'dirish */
+  }
+
+  table, table * {
+    font-size: 12px; /* Mobilda shrift o'lchami */
+  }
+
+  table td, 
+  table th {
+    padding: 6px 8px; /* Mobilda padding */
+  }
+
+  table td[width],
+  table th[width] {
+    width: auto; /* Mobilda kenglikni avtomatik qilish */
+  }
+}
+
+/* Kichik mobil qurilmalar uchun (480px gacha) */
+@media screen and (max-width: 480px) {
+  table, table * {
+    font-size: 11px; /* Kichik mobilda shrift o'lchami */
+  }
+
+  table td, 
+  table th {
+    padding: 4px 6px; /* Kichik mobilda padding */
+  }
+}
+
+        .loader-img {
+            animation:  3s linear infinite;
+        }
+      
+        .horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list li {
+
+            display: block;
+
+            text-align: center;
+
+            white-space: nowrap;
+
+            text-align: left;
+
+            padding: 3px 8px 3px 8px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+
+            .container {
+
+                max-width: 1300px;
+
+            }
+
+        }
+
+        .mega-wrapper {
+            position: relative;
+            overflow: hidden;
+            z-index: 991;
+        }
+
+        .mega-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            /* background-image: url('https://images.app.goo.gl/NsmwGFNXEPtXyDpi8'); */
+            background-size: 1700px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            opacity: 0.03;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .megamenu-content {
+            position: relative;
+            z-index: 2;
+        }
+
+
+        @keyframes heartbeat {
+          0% {
+            transform: scale(1);
+            text-shadow: 0 0 0 rgba(255,0,0,0);
+          }
+          25% {
+            transform: scale(1.2);
+            text-shadow: 0 0 5px rgba(255,0,0,0.7);
+          }
+          50% {
+            transform: scale(1);
+            text-shadow: 0 0 0 rgba(255,0,0,0);
+          }
+          75% {
+            transform: scale(1.2);
+            text-shadow: 0 0 5px rgba(255,0,0,0.7);
+          }
+          100% {
+            transform: scale(1);
+            text-shadow: 0 0 0 rgba(255,0,0,0);
+          }
+        }
+     
+        .custom-margin-container {
+            margin: 0 10px;
+        }
+        
+        .custom-admission-link {
+            font-size: 0.9rem !important;
+            width: auto;
+            min-width: 250px;
+        }
+     
+        .ss-search-form {
+         position: relative;
+     }
+     .ss-search-form__results {
+         display: none;
+         position: absolute;
+         left: 0;
+         top: 40px;
+         width: 100%;
+         background: #fff;
+         padding: 1em;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+     }
+     .ss-search-form__results--visible {
+         display: block;
+     }
+    
+
+
+  .media-section {
+    background-color: #f8f9fa;
+  }
+  
+  .img-container {
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-container img:hover {
+    transform: scale(1.05);
+  }
+
+ 
+    /* Modal uchun asosiy stillar */
+    .modal {
+        padding: 0 !important;
+    }
+
+    .modal-dialog {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+        margin: 0;
+        padding: 0;
+        max-width: 90%;
+        width: 1200px;
+        /* Kattaroq o'lcham */
+    }
+
+    .modal-content {
+        border-radius: 8px;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 nisbat */
+        height: 0;
+        overflow: hidden;
+        background: #000;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Mobile ekranlar uchun */
+    @media (max-width: 768px) {
+        .modal-dialog {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .modal-title {
+            font-size: 1.1rem;
+        }
+    }
+
+    /* Body scroll bo'lmasligi uchun */
+    body.modal-open {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .close {
+        font-size: 28px;
+        cursor: pointer;
+        padding: 0 8px;
+    }
+
+    .close:hover {
+        color: red;
+        opacity: 1;
+    }
+
+
+    
+    .custom-modal-width {
+        max-width: 30% !important;
+        margin: 0 auto;
+    }
+
+    /* Modal markazda bo'lishi uchun */
+    .modal-dialog-centered {
+        display: flex;
+        align-items: center;
+        min-height: calc(100% - 1rem);
+    }
+
+    /* Mobil qurilmalarda responsive bo'lishi uchun */
+    @media (max-width: 768px) {
+        .custom-modal-width {
+            max-width: 90% !important;
+        }
+    }
+ 
+
+   
+    @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+    .container_sta {
+        width: 200px; /* Konteyner o'lchami (kattaroq) */
+        height: 100px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_sta .cp-btn {
+        border: unset;
+        outline: unset;
+        position: relative;
+        padding: 0; /* Paddingni olib tashlash */
+        width: 100%; /* Button o'lchami */
+        height: 100%;
+        color: #fff;
+        font-size: 20px; /* Matn o'lchamini kattalashtirish */
+        font-weight: 400;
+        letter-spacing: 2px; /* Harflar orasidagi masofani oshirish */
+        text-transform: uppercase;
+        background: black;
+        z-index: 1;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_sta .cp-btn:before,
+    .container_sta .cp-btn:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .container_sta .cp-btn:before {
+        animation: rainbow-border 1.5s linear infinite;
+        border-radius: 4px;
+        background: linear-gradient(70deg, #0ebeff, #ffdd40, #ae63e4, #47cf73, #0ebeff, #ffdd40, #ae63e4, #47cf73);
+        width: 100%;
+        height: 100%;
+        background-size: 200% 200%;
+    }
+
+    .container_sta .cp-btn:after {
+        border-radius: 3px;
+        margin: 3px;
+        background: inherit;
+    }
+
+    @keyframes rainbow-border {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 200% 50%;
+        }
+    }
+
+
+    #captcha {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        min-width: 120px;
+        text-align: left;
+        /* center o'rniga left qildim */
+        padding-left: 5px;
+        margin-left: 10px;
+        /* chap tomondan 5px masofa */
+        color: var(--bs-dark);
+        background-color: var(--bs-light);
+        border-right: none;
+    }
+
+    @media (max-width: 768px) {
+        .captcha-group {
+            width: 100% !important;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .col-xl-4.col-lg-4.col-sm-8.col-12 {
+            display: none;
+        }
+        .admission-container {
+            display: none;
+        }
+    }
+    
+    .admission-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .admission-announcement {
+        font-size: 1.3rem;
+        font-weight: 900;
+        text-align: center;
+        color: #ed070c;
+        padding: 0 16px;
+        border-radius: 8px;
+        width: 300px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .admission-announcement:hover {
+        color: #fff;
+        background: linear-gradient(45deg, #ed070c, #ff4444, #cc0000);
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(237, 7, 12, 0.6);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    
+    .admission-announcement::before {
+        content: '🔥';
+        font-size: 0.8rem;
+    }
+                      
